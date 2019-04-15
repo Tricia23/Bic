@@ -1,0 +1,90 @@
+.navbar.bg-light{
+    background-color: rgb(88, 87, 86)!important;
+}
+
+ .navbar-collapse{
+    justify-content: center;
+}
+
+/* .navbar{
+    display:block!important;
+} */
+/* .buy-now{
+    float: right;
+    color: white;
+    font-size: 11px;
+} */
+
+.nav-link{
+    font-size:11px;
+    color: white!important;
+
+}
+.navbar-brand{
+    /* margin-left: 10rem; */
+    margin-top:2rem;
+}
+.navbar-nav{
+    margin-top: 3rem;
+    margin-left: 22rem;
+}
+.navbar{
+    padding:0rem 1rem!important;
+}
+
+.icons{
+    display: inline-flex!important;
+    list-style: none;
+}
+.icon-item{
+    padding: 0px 3px;
+}
+.topnav-right{
+    margin-top: -50px;
+    margin-left: auto;
+    position: relative;
+    float: right;
+    font-size: 12px;
+}
+.buy-now{
+    color: white;
+    margin-left: 3px;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 50vh !important;
+}
+
+.carousel-indicators li {
+  width: 10px!important;
+  height: 10px!important;
+  border-radius: 100%!important;
+}
+
+.indicator-background{
+    background-color: grey;
+}
+.carousel-control-prev-icon{
+    margin: 20px;
+}
+
+.carousel-control-next-icon{
+    margin: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand{
+        margin-left: 10rem;
+    }
+    .d-block{
+        max-height: 50vh;
+    }
+
+    .multiple-slider{
+        margin-top: 30px ;
+        padding-bottom: 30px;
+    }
+
+}
+
