@@ -68,10 +68,14 @@
 .carousel-control-prev-icon{
     margin: 20px;
 }
+.carousel-control-next, .carousel-control-prev{
+    width:5%!important;
+}
 
 .carousel-control-next-icon{
     margin: 20px;
 }
+
 
 @media only screen and (min-width: 768px) {
     .navbar-brand{
