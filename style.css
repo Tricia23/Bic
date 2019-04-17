@@ -37,6 +37,7 @@
 }
 .navbar{
     padding:0rem 1rem!important;
+    flex-wrap: nowrap!important;
 }
 
 .icons{
@@ -64,7 +65,7 @@
 }
 .carousel-img{
     width: 100%;
-height: 65vh;
+height: 30vh;
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -102,57 +103,69 @@ min-height: 30vh;
     background-repeat: no-repeat;
     background-size:cover;
 }
+
+.sec-3-col{
+    padding: 0!important;
+}
 .caption-title{
     text-transform:uppercase;
     text-align: center;
     color:#EE9127;
     font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
 }
 .caption p{
     text-transform:uppercase;
     text-align: center;
-    color:#fff;
-
+    color:rgba(255, 255, 255, 0.945)!important;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin-bottom: 5px;
 }
+
 .caption{
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 22px;
    justify-content: center;
     font-size: 13px;
 }
 
+.caption-btn-wrap{
+    display: flex!important;
+    justify-content: center!important;
 
+}
 
-@media only screen and (min-width: 768px) {
-    .navbar-brand{
-        margin-left: 10rem;
-    }
-    .d-block{
-        width: 100%;
-        max-height: 90vh;
-        object-fit: cover;
-        object-position: center;
+.caption-btn{
 
-    }
-    .multiple-slider{
-        margin-top: 15px ;
-        padding-bottom: 15px;
-    }
+    text-decoration: none!important;
+    background-color: #7c7270c2;
+    border:1px solid #a8a8a873;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 10px;
+    padding: 7px;
+    color: #fffffff1!important;
 
-    .carousel-inner{
-    width:100%;
-    max-height: 90vh !important;
-    }
-    .sec-3-col{
-        padding: 0!important;
-    }
+}
 
-    .footer{
+ .footer{
     background: #292929;
     padding: 30px 0px;
     }
-    .copyright{
+
+
+.play{
+    height: 12px;
+}
+
+sup{
+    margin-left: -6px;
+}
+
+.copyright{
         color: white;
     }
     a.contact{
@@ -190,6 +203,43 @@ min-height: 30vh;
     svg{
         margin: auto!important;
     }
+
+    .contact-wrapper{
+        display: flex;
+        justify-content:flex-end;
+    }
+
+    .copy-wrapper{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand{
+        margin-left: 10rem;
+    }
+    .d-block{
+        width: 100%;
+        max-height: 90vh;
+        object-fit: cover;
+        object-position: center;
+
+    }
+    .multiple-slider{
+        margin-top: 15px ;
+        padding-bottom: 15px;
+    }
+
+    .carousel-inner{
+    width:100%;
+    max-height: 90vh !important;
+    }
+
+    .copy-wrapper{
+        text-align: justify;
+        margin-bottom: 0;
+    }
+
 
     .contact-wrapper{
         display: flex;
