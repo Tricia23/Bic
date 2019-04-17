@@ -257,7 +257,9 @@ sup{
         margin-right: 1rem;
         width: 50px;
         height: 50px;
-        border-radius: 50%
+        border-radius: 50%;
+        background-position:center;
+        background-size: cover;
     }
     .info-items{
         list-style: none;
@@ -275,6 +277,7 @@ sup{
     .list-text{
         text-transform: uppercase;
         font-size: 0.8rem;
+
     }
 
     .btn.btn-primary{
@@ -290,6 +293,9 @@ sup{
         background-color: #E6E6E6;
         height: 20px;
         width: 100%;
+    }
+    #list-text{
+        margin:auto;
     }
     .banner{
         min-height:360px;
@@ -307,6 +313,16 @@ sup{
         display: flex;
         justify-content: center;
     }
+
+    .buy-now-btn{
+        height: 90px;
+        width: 150px;
+        background-position: cover;
+        background-size: center;
+        background-repeat: no-repeat;
+    }
+
+
 
 @media only screen and (min-width: 768px) {
     .navbar-brand{
