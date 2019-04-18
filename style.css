@@ -297,10 +297,16 @@ sup{
     #list-text{
         margin:auto;
     }
-    .banner{
+    .banner1{
         min-height:360px;
         width: 100%;
         background-position:bottom center;
+        background-size: cover
+    }
+    .banner2{
+        min-height:360px;
+        width: 100%;
+        background-position:center;
         background-size: cover
     }
     h2{
@@ -320,6 +326,22 @@ sup{
         background-position: cover;
         background-size: center;
         background-repeat: no-repeat;
+    }
+
+    .next-btn{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .next{
+        margin-top: 15px;
+        margin-bottom: -31px;
+        height: 90px;
+        width: 150px;
+        background-position: cover;
+        background-size: center;
+        background-repeat: no-repeat;
+
     }
 
 
