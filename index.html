@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Landing Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
@@ -64,15 +64,13 @@
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="images/landing/first-slider/bg1.png" class="d-block w-100" alt="..." />
         <div class="carousel-caption  d-md-block">
           <h1 class="caption1">choose smart. shave with bic
-            <sup class="header-sup">&reg;</sup>.
-          </h1>
+            <sup class="header-sup">&reg;</sup>.</h1>
         </div>
       </div>
       <div class="carousel-item">
@@ -97,17 +95,17 @@
     </a>
   </div>
 
-  <div class="container">
-    <h3 class="products">products</h3>
-    <div class="your-class">
+  <div class="container products-wrapper">
+    <h3 class="products">Products</h3>
+    <div class="product-showcase">
       <div class="slider-img">
-        <img class="slider-img" src="images/landing/second-slider/img-1.png" alt="">
+        <img class="slider-img" data-lazy="images/landing/second-slider/img-1.png" alt="" />
         <div class="slider-caption-wrap">
           <a class="" href="">
-            <div class="slider-caption">know more
+            <div class="slider-caption">
+              know more
               <span class="forward">></span>
             </div>
-
           </a>
           <a href="">
             <div class="slider-buy" style="background-image: url(images/product/product-page/buy-now-btn.png)"></div>
@@ -115,13 +113,13 @@
         </div>
       </div>
       <div class="slider-img">
-        <img class="slider-img" src="images/landing/second-slider/img-2.png" alt="">
+        <img class="slider-img" data-lazy="images/landing/second-slider/img-2.png" alt="" />
         <div class="slider-caption-wrap">
           <a class="" href="">
-            <div class="slider-caption">know more
+            <div class="slider-caption">
+              know more
               <span class="forward">></span>
             </div>
-
           </a>
           <a href="">
             <div class="slider-buy" style="background-image: url(images/product/product-page/buy-now-btn.png)"></div>
@@ -129,25 +127,33 @@
         </div>
       </div>
       <div class="slider-img">
-        <img class="slider-img" src="images/landing/second-slider/img-3.png" alt="">
+        <img class="slider-img" data-lazy="images/landing/second-slider/img-3.png" alt="" />
         <div class="slider-caption-wrap">
           <a class="" href="">
-            <div class="slider-caption">know more
+            <div class="slider-caption">
+              know more
               <span class="forward">></span>
             </div>
-
           </a>
           <a href="">
             <div class="slider-buy" style="background-image: url(images/product/product-page/buy-now-btn.png)"></div>
           </a>
         </div>
       </div>
-
-      <!-- <img class="slider-img" src="images/landing/second-slider/img-1.png" alt="">
-      <img class="slider-img" src="images/landing/second-slider/img-2.png" alt="">
-      <img class="slider-img" src="images/landing/second-slider/img-3.png" alt="">
-      <img class="slider-img" src="" alt=""> -->
-
+      <div class="slider-img">
+        <img class="slider-img" data-lazy="images/landing/second-slider/img-3.png" alt="" />
+        <div class="slider-caption-wrap">
+          <a class="" href="">
+            <div class="slider-caption">
+              know more
+              <span class="forward">></span>
+            </div>
+          </a>
+          <a href="">
+            <div class="slider-buy" style="background-image: url(images/product/product-page/buy-now-btn.png)"></div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -291,19 +297,19 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/slick/slick.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.your-class').slick({
+      $('.product-showcase').slick({
         speed: 300,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: true,
+        lazyLoad: 'ondemand',
         responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } }]
       });
     });
