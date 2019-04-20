@@ -10,7 +10,7 @@ body {
 
 /* navbar styling */
 .navbar {
-  background-image: url('images/landing/gradient.png');
+  background-image: url('/images/landing/gradient.png');
   background-position: center;
   background-size: cover;
   padding: 0.2rem 1rem !important;
@@ -80,12 +80,11 @@ body {
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
-.navbar .navbar-nav .nav-item > .nav-link,
-.navbar .navbar-nav .nav-item > .nav-link:hover,
-.navbar .navbar-nav .nav-item.show > .nav-link {
-  font-size: 12px;
-
-}
+  .navbar .navbar-nav .nav-item > .nav-link,
+  .navbar .navbar-nav .nav-item > .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show > .nav-link {
+    font-size: 12px;
+  }
   .navbar .navbar-brand {
     margin-top: 30px;
     margin-bottom: 0;
@@ -147,9 +146,16 @@ body {
 }
 
 .carousel-indicators li {
-  width: 10px !important;
-  height: 10px !important;
+  width: 12px !important;
+  height: 12px !important;
   border-radius: 100% !important;
+}
+
+.carousel-indicators {
+  right: 78% !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  bottom: -19px !important;
 }
 
 .indicator-background {
@@ -168,36 +174,42 @@ body {
   margin: 3px;
 }
 
-.carousel-caption{
-  top: -5px!important;
+.carousel-caption {
+  top: -5px !important;
 }
-.caption1{
-text-transform: uppercase;
-letter-spacing: 5px;
-font-size: 0.7rem!important;
-line-height: 1.5;
-}
-.caption2{
-text-transform: uppercase;
-letter-spacing: 5px;
-color: #1d1c1c;
-font-size: 0.7rem!important
-}
-
-@media only screen and (min-width: 768px) {
-  .carousel-caption{
-    top: 40px!important;
-  }
-  .caption1{
+.caption1 {
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 2rem!important;
-  }
-  .caption2{
+  font-size: 0.7rem !important;
+  line-height: 1.5;
+}
+.caption2 {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #1d1c1c;
-  font-size: 2rem!important;
+  font-size: 0.7rem !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel-indicators {
+    right: 88% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    bottom: -10px !important;
+  }
+  .carousel-caption {
+    top: 40px !important;
+  }
+  .caption1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2rem !important;
+  }
+  .caption2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #1d1c1c;
+    font-size: 2rem !important;
   }
 }
 
@@ -209,11 +221,61 @@ font-size: 0.7rem!important
   }
 }
 
-.slider-img{
-  height: 100px;
+.slider-img {
+  /* height: 85vh!important; */
+  width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  outline: none;
+}
+
+.slider-caption-wrap {
+  position: absolute;
+  bottom: 6%;
+  left: 0;
+  width: 100%;
+}
+
+.slider-caption-wrap a {
+  text-decoration: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+.slider-caption {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #00000096;
+  font-size: 11px;
+  letter-spacing: 4px;
+  padding: 5px;
+  width: 144px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-buy {
+  margin: auto;
+  margin-top: 15px;
+  height: 30px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.products-wrapper {
+  padding: 60px 0;
+}
+
+.products {
+  text-align: center;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
 /* product ads styling */
@@ -243,7 +305,7 @@ font-size: 0.7rem!important
   color: rgba(255, 255, 255, 0.945) !important;
   letter-spacing: 2px;
   font-size: 11px;
-  margin-bottom: 5px;
+  margin: 10px 0;
 }
 
 .caption {
@@ -283,7 +345,7 @@ font-size: 0.7rem!important
 sup {
   margin-left: -6px;
 }
-.header-sup{
+.header-sup {
   margin-left: -10px;
 }
 
@@ -301,6 +363,10 @@ a.contact {
 a.contact:hover {
   background: #fff;
   color: #292929 !important;
+}
+
+.social-white {
+  list-style: none;
 }
 .social {
   display: inline-flex;
@@ -346,7 +412,7 @@ svg {
 }
 
 .razor {
-  background-image: url(/images/bg-gradient.jpg?127e900…);
+  background-image: url(/images/bg-gradient.jpg);
   background-size: 100% auto;
   padding: 40px 0;
   position: relative;
@@ -499,10 +565,14 @@ h2 {
   .copy-wrapper {
     padding: 5px 0 5px 0;
   }
+  .avatar-padding {
+    padding-left: 0 !important;
+  }
 
   .product-wrapper2 {
     margin-left: 6rem;
   }
+
   h2 {
     font-size: 30px !important;
     margin-top: 1rem !important;
