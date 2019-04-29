@@ -563,6 +563,133 @@ h2 {
   background-repeat: no-repeat;
 }
 
+.contact-banner {
+  min-height: 390px;
+  width: 100%;
+  background-position: left;
+  background-size: cover;
+}
+
+.contact-address {
+  line-height: 2;
+  font-size: 12px;
+}
+.contact-no-wrap {
+  margin-top: 20px;
+  line-height: 2;
+  font-size: 12px;
+}
+.follow-us {
+  margin-top: 80px;
+}
+.contact-no-wrap .contact-social-icons {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.contact-no-wrap .contact-social-icons li {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.contact-no-wrap .contact-social-icons img {
+  width: 10px;
+}
+.contact-detail-wrap {
+  padding: 30px 0 30px 0;
+}
+
+.black-box {
+  height: 8px;
+  width: 50px;
+  background-color: #000;
+}
+
+.card-wrapper {
+  display: flex;
+  background-color: #f8931f;
+}
+.map-image {
+  width: 100%;
+}
+.contact-space {
+  display: none;
+}
+.contact-details {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.contact-caption {
+  text-align: center;
+  color: #ffffffbd;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 7px;
+  font-size: 20px;
+  padding: 30px 0;
+}
+@media only screen and (min-width: 900px) {
+  .contact-banner {
+    background-position: top center;
+  }
+  .contact-space {
+    width: 30%;
+    display: block;
+  }
+  .contact-details {
+    width: 70%;
+  }
+  .map-image {
+    height: 450px;
+    width: auto;
+  }
+  .contact-row {
+    padding: 50px 0 50px 0;
+  }
+  .contact-caption {
+    text-align: center;
+    color: #ffffffbd;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 7px;
+    padding: 40px 0;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .contact-banner {
+    background-position: top center;
+  }
+  .contact-space {
+    width: 40%;
+  }
+  .contact-caption {
+    text-align: center;
+    color: #ffffffbd;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 7px;
+    padding: 40px 0px;
+  }
+  .contact-details {
+    width: 60%;
+  }
+  .map-image {
+    height: 450px;
+    width: auto;
+  }
+  .contact-row {
+    padding: 50px 0 50px 0;
+  }
+}
+
 /* for desktop */
 @media only screen and (min-width: 768px) {
   .d-block {
