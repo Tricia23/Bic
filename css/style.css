@@ -694,38 +694,39 @@ h2 {
 }
 
 .fact-banner{
-  min-height: 490px;
+  min-height: 250px;
   width: 100%;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.fact-caption {
+  text-align: center;
+  color: #ffffffbd;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 7px;
+  font-size: 17px;
+  padding: 14px 0;
+}
+
 .fact-icons{
-  min-height: 70px;
-  width: 70px;
+  min-height: 46px;
+  width: 46px;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.fact-container{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+
 .fact-row{
   margin-top:20px;
   margin-bottom: 30px;
 
 }
-.facticon-col{
-  display: flex;
-  justify-content: flex-end;
-}
-.fact-wrapper{
-  width: 70%;
-  margin: auto;
-}
+
+
 .facttext-col{
   display: flex;
   align-items: center;
@@ -735,6 +736,45 @@ h2 {
   letter-spacing: 2px;
   line-height: 2px;
   font-size: 12px;
+}
+
+@media only screen and (min-width: 900px) {
+  .fact-banner{
+  min-height: 490px;
+  }
+
+  .fact-caption {
+    text-align: center;
+    color: #ffffffbd;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 7px;
+    font-size: 20px;
+    padding: 30px 0;
+  }
+
+  .fact-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .facticon-col{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .fact-wrapper{
+    width: 70%;
+    margin: auto;
+  }
+
+  .fact-icons{
+    min-height: 70px;
+    width: 70px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 /* for desktop */
